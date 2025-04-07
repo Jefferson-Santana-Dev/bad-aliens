@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bad Aliens!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Bad Aliens!</h1>
+  <h2>Instrutor Jefferson</h2>
+  <div id="preparacao"></div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <div id="ranking"></div>
+  <button id="botaoIniciar">Iniciar Batalha</button>
+  <button id="jogarNovamente" style="display:none;" onclick="reiniciarJogo()">Jogar Novamente</button>
+
+  <!-- Sons -->
+  <audio id="somTiro" src="assets/tiro.mp3"></audio>
+  <audio id="somExplosao" src="assets/explosao.mp3"></audio>
+  <audio id="somFundo" src="assets/fundo.mp3" loop></audio>
+  <audio id="somBeep" src="assets/beep.mp3"></audio>
+  <audio id="somGameOver" src="assets/gameover.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
