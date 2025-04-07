@@ -118,7 +118,7 @@ function loopJogo() {
 
 function iniciarJogo() {
   estadoDoJogo = "jogando";
-  somFundo.volume = 0.3;
+  somFundo.volume = 1.0;
   somFundo.play();
   
   intervaloInimigos = setInterval(gerarInimigo, 1000);
@@ -170,7 +170,7 @@ window.addEventListener("keydown", (e) => {
   teclas[e.key] = true;
   if (e.key === " " && estadoDoJogo === "jogando") {
     tiros.push({ x: nave.x + nave.largura / 2 - 2.5, y: nave.y, largura: 5, altura: 10 });
-    somTiro.volume = 0.4;
+    somTiro.volume = 0.3;
     somTiro.play();
   }
 });
